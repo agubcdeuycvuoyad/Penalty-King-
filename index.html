@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>World Cup Penalty Shootout - Easy Goalkeeper Edition</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1>🏆 WORLD CUP PENALTY SHOOTOUT</h1>
+      <div id="status-bar">
+        <span id="match-info">Quarter-Finals</span>
+        <span id="score-board">Scores: 0 - 0</span>
+        <span id="kicks-count">Kicks: 0 / 5</span>
+      </div>
+    </header>
+
+    <div id="canvas-wrapper">
+      <canvas id="gameCanvas" width="800" height="500"></canvas>
+      <div id="overlay-screen" class="overlay">
+        <h2 id="overlay-title">Select Your Team</h2>
+        <div id="team-select" class="team-grid"></div>
+        <div class="role-select">
+          <label><input type="radio" name="role" value="GOALKEEPER" checked> Goalkeeper Mode (Easier)</label>
+          <label><input type="radio" name="role" value="STRIKER"> Striker Mode</label>
+        </div>
+        <button id="start-btn" class="btn">Start Tournament</button>
+      </div>
+    </div>
+
+    <footer>
+      <div id="instructions">
+        <strong>Goalkeeper Controls:</strong> Move your mouse or touch the screen to position the gloves over the incoming ball. Watch for the glowing target marker!
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
